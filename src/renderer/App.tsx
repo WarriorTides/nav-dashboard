@@ -9,6 +9,7 @@ import './App.css';
 import Webcam from 'react-webcam';
 import React from 'react';
 
+
 // camera viewer
 const CameraViewer = () => {
   let { deviceId } = useParams<{ deviceId: string }>();
@@ -31,6 +32,9 @@ const CameraViewer = () => {
     </div>
   );
 };
+
+
+
 
 // main ui dashboard
 const Hello = () => {
@@ -76,12 +80,15 @@ const Hello = () => {
           <button
             type="button"
             className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+
+
           >
             Run Photo Analysis
           </button>
           <button
             type="button"
             className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+
           >
             Run Diagnostics
           </button>
@@ -160,3 +167,4 @@ export default function App() {
     </Router>
   );
 }
+
